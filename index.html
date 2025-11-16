@@ -317,6 +317,50 @@
                 column-count: 1;
             }
         }
+
+        .brand-standards-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 0;
+        }
+
+        .gallery-item {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            background: var(--white);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--red);
+            box-shadow: 0 4px 12px rgba(225, 40, 39, 0.2);
+        }
+
+        .gallery-item a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .brand-standards-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            .gallery-item img {
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -330,10 +374,10 @@
         </div>
 
         <div class="header-pattern">
-            <img src="https://i.imgur.com/placeholder1.png" alt="Chili Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/placeholder2.png" alt="Chili Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/placeholder3.png" alt="Chili Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/placeholder4.png" alt="Chili Pattern" onerror="this.style.display='none'">
+            <img src="https://i.imgur.com/qF1pQ64l.png" alt="Chili Pattern" loading="lazy">
+            <img src="https://i.imgur.com/QNdwcnnl.png" alt="Chili Pattern" loading="lazy">
+            <img src="https://i.imgur.com/Rw7Eflgl.png" alt="Chili Pattern" loading="lazy">
+            <img src="https://i.imgur.com/CAItlnul.png" alt="Chili Pattern" loading="lazy">
         </div>
 
         <p style="margin-top: 2rem; opacity: 0.8;">Brinker International Payroll Company, 06/2025</p>
@@ -350,6 +394,7 @@
             <a href="#technology">Technology</a>
             <a href="#foh">Front of House</a>
             <a href="#hoh">Heart of House</a>
+            <a href="#gallery">Image Gallery</a>
         </nav>
     </div>
 
@@ -461,12 +506,12 @@
         </section>
 
         <div class="decorative-pattern">
-            <img src="https://i.imgur.com/pattern1.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern2.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern3.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern4.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern5.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern6.png" alt="Pattern" onerror="this.style.display='none'">
+            <img src="https://i.imgur.com/0oMiH7yl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/iovNGizl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/9VIQS9Ml.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/KmSrgnEl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/mdq0kCnl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/tGpiCy4l.png" alt="Pattern" loading="lazy">
         </div>
 
         <!-- SAFETY & SECURITY SECTION -->
@@ -615,12 +660,12 @@
         </section>
 
         <div class="decorative-pattern">
-            <img src="https://i.imgur.com/pattern1.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern2.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern3.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern4.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern5.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern6.png" alt="Pattern" onerror="this.style.display='none'">
+            <img src="https://i.imgur.com/F3RyJWol.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/vzX63mZl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/oeYuxSRl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/KgM4abRl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/7lvTdbZl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/M9kKy9sl.png" alt="Pattern" loading="lazy">
         </div>
 
         <!-- TECHNOLOGY SECTION -->
@@ -682,12 +727,12 @@
         </section>
 
         <div class="decorative-pattern">
-            <img src="https://i.imgur.com/pattern1.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern2.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern3.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern4.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern5.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern6.png" alt="Pattern" onerror="this.style.display='none'">
+            <img src="https://i.imgur.com/8b4y2Ltl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/LmG5Umdl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/JjfbJj9l.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/IXoyIP7l.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/TMNYlSgl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/0ytVW75l.jpeg" alt="Pattern" loading="lazy">
         </div>
 
         <!-- FRONT OF HOUSE SECTION -->
@@ -1162,12 +1207,12 @@
         </section>
 
         <div class="decorative-pattern">
-            <img src="https://i.imgur.com/pattern1.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern2.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern3.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern4.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern5.png" alt="Pattern" onerror="this.style.display='none'">
-            <img src="https://i.imgur.com/pattern6.png" alt="Pattern" onerror="this.style.display='none'">
+            <img src="https://i.imgur.com/lfuNbGzl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/gupGDyTl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/6DKe73Cl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/2G78bawl.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/qD2FSX3l.png" alt="Pattern" loading="lazy">
+            <img src="https://i.imgur.com/Hxq9XJbl.png" alt="Pattern" loading="lazy">
         </div>
 
         <!-- HEART OF HOUSE SECTION -->
@@ -1601,6 +1646,50 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- BRAND STANDARDS GALLERY -->
+        <section id="gallery" class="section">
+            <div class="section-header">Brand Standards Image Gallery</div>
+            <div class="section-content">
+                <div class="brand-standards-gallery">
+                    <div class="gallery-item"><a href="https://i.imgur.com/qF1pQ64.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/qF1pQ64l.png" alt="Brand Standard 1" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/QNdwcnn.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/QNdwcnnl.png" alt="Brand Standard 2" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/Rw7Eflg.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/Rw7Eflgl.png" alt="Brand Standard 3" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/CAItlnu.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/CAItlnul.png" alt="Brand Standard 4" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/0oMiH7y.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/0oMiH7yl.png" alt="Brand Standard 5" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/iovNGiz.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/iovNGizl.png" alt="Brand Standard 6" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/9VIQS9M.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/9VIQS9Ml.png" alt="Brand Standard 7" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/KmSrgnE.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/KmSrgnEl.png" alt="Brand Standard 8" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/mdq0kCn.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/mdq0kCnl.png" alt="Brand Standard 9" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/tGpiCy4.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/tGpiCy4l.png" alt="Brand Standard 10" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/F3RyJWo.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/F3RyJWol.png" alt="Brand Standard 11" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/vzX63mZ.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/vzX63mZl.png" alt="Brand Standard 12" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/oeYuxSR.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/oeYuxSRl.png" alt="Brand Standard 13" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/KgM4abR.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/KgM4abRl.png" alt="Brand Standard 14" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/7lvTdbZ.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/7lvTdbZl.png" alt="Brand Standard 15" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/M9kKy9s.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/M9kKy9sl.png" alt="Brand Standard 16" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/8b4y2Lt.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/8b4y2Ltl.png" alt="Brand Standard 17" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/LmG5Umd.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/LmG5Umdl.png" alt="Brand Standard 18" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/JjfbJj9.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/JjfbJj9l.png" alt="Brand Standard 19" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/IXoyIP7.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/IXoyIP7l.png" alt="Brand Standard 20" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/TMNYlSg.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/TMNYlSgl.png" alt="Brand Standard 21" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/0ytVW75.jpeg" target="_blank" rel="noopener"><img src="https://i.imgur.com/0ytVW75l.jpeg" alt="Brand Standard 22" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/lfuNbGz.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/lfuNbGzl.png" alt="Brand Standard 23" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/gupGDyT.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/gupGDyTl.png" alt="Brand Standard 24" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/6DKe73C.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/6DKe73Cl.png" alt="Brand Standard 25" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/2G78baw.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/2G78bawl.png" alt="Brand Standard 26" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/qD2FSX3.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/qD2FSX3l.png" alt="Brand Standard 27" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/Hxq9XJb.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/Hxq9XJbl.png" alt="Brand Standard 28" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/Iwy04Nw.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/Iwy04Nwl.png" alt="Brand Standard 29" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/CiZwCuc.jpeg" target="_blank" rel="noopener"><img src="https://i.imgur.com/CiZwCucl.jpeg" alt="Brand Standard 30" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/0KpIkJG.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/0KpIkJGl.png" alt="Brand Standard 31" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/5JANFfe.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/5JANFfel.png" alt="Brand Standard 32" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/rn3VKtG.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/rn3VKtGl.png" alt="Brand Standard 33" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/YLuqziv.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/YLuqzivl.png" alt="Brand Standard 34" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/qS3Dk0v.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/qS3Dk0vl.png" alt="Brand Standard 35" loading="lazy" /></a></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/xjXhQbd.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/xjXhQbdl.png" alt="Brand Standard 36" loading="lazy" /></a></div>
                 </div>
             </div>
         </section>
